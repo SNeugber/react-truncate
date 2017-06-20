@@ -176,7 +176,7 @@ export default class Truncate extends Component {
         } = this;
 
         const lines = [];
-        const text = innerText(refs.text);
+        const text = refs.text;
         const textLines = text.split('\n').map(line => line.split(' '));
         let didTruncate = true;
         const ellipsisWidth = this.ellipsisWidth(this.refs.ellipsis);
